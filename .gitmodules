@@ -1,0 +1,3 @@
+[submodule "QRCodeSource/LibQREncode"]
+	path = QRCodeSource/LibQREncode
+	url = https://github.com/fukuchi/libqrencode.git
