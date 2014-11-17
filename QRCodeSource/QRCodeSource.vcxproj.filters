@@ -24,9 +24,6 @@
     <ClInclude Include="LibQREncode\mask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LibQREncode\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LibQREncode\mmask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -46,6 +43,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LibQREncode\split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

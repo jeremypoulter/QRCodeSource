@@ -52,6 +52,7 @@
       <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;_DEBUG;_WINDOWS;_USRDLL;QRCODESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -69,6 +70,7 @@
       <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;NDEBUG;_WINDOWS;_USRDLL;QRCODESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -79,8 +81,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="avisynth.h" />
+    <ClInclude Include="config.h" />
     <ClInclude Include="LibQREncode\bitstream.h" />
-    <ClInclude Include="LibQREncode\config.h" />
     <ClInclude Include="LibQREncode\mask.h" />
     <ClInclude Include="LibQREncode\mmask.h" />
     <ClInclude Include="LibQREncode\mqrspec.h" />
