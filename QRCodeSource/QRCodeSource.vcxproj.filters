@@ -50,12 +50,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimpleSample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RandomSource.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="QRCodeSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
