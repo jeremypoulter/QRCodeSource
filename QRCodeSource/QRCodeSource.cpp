@@ -1,4 +1,11 @@
+#ifdef _WINDOWS
 #include <windows.h>
+#else
+#define IN
+#define OUT
+typedef unsigned char BYTE;
+#endif
+
 #include <stdio.h>
 #include <time.h>
 
