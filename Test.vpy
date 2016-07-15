@@ -4,7 +4,7 @@ import math
 
 core = vs.get_core()
 
-core.std.LoadPlugin(path="D:/Users/Jeremy/Documents/Dev/JeremyPoulter/QRCodeSource/Debug/QRCodeSourceVS.dll")
+#core.std.LoadPlugin(path="D:/Users/Jeremy/Documents/Dev/JeremyPoulter/QRCodeSource/Debug/QRCodeSourceVS.dll")
 
 def overlay(bottom, top, x, y):
 	# crop the top clip if needed
