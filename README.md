@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8st9b0l2r5mmxfrc?svg=true)](https://ci.appveyor.com/project/jeremypoulter/qrcodesource)
+
 QRCodeSource
 ============
 
