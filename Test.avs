@@ -1,4 +1,4 @@
-LoadPlugin("Debug\QRCodeSource.dll")
+LoadPlugin("Debug\As\Win32\QRCodeSource.dll")
 
 global main_clip = ColorBars(640, 480)
 #global main_clip = ColorBars(1280, 720)

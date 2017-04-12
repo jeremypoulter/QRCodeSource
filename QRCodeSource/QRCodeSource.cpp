@@ -58,10 +58,12 @@ bool create_qr_instance(IN const char *string, IN int version, IN const char *er
 #ifdef IS_VAPOURSYNTH
 #define COLOUR1 0x00
 #define COLOUR2 0xff
+#define Y_POS(h, y) (y)
 typedef unsigned char PIXEL;
 #else
 #define COLOUR1 0x00000000
 #define COLOUR2 0x00ffffff
+#define Y_POS(h, y) (h - y - 1)
 typedef unsigned int PIXEL;
 #endif
 
@@ -87,7 +89,7 @@ void write_qr_code(BYTE* p, QRcode *pQRC, unsigned int pitch, unsigned int heigh
         for (n = 0; n < OUT_FILE_PIXEL_PRESCALER; n++)
         {
           pDestData = (PIXEL *)(p +
-            ((BOADER_SIZE + ((unWidth - y - 1) * OUT_FILE_PIXEL_PRESCALER) + l) * pitch) +
+            ((BOADER_SIZE + (Y_POS(unWidth, y) * OUT_FILE_PIXEL_PRESCALER) + l) * pitch) +
             (BOADER_SIZE + (x * OUT_FILE_PIXEL_PRESCALER) + n) * sizeof(PIXEL));
           *pDestData = uiPixelColour;
         }
